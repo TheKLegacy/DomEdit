@@ -1,12 +1,6 @@
 console.log("test");
 
-var ui = new firebaseui.auth.AuthUI(firebase.auth());
-ui.start('#firebaseui-auth-container', {
-    signInOptions: [
-      firebase.auth.EmailAuthProvider.PROVIDER_ID
-    ],
-    // Other config options...
-  });
+
 
   var uiConfig = {
     callbacks: {
@@ -20,8 +14,7 @@ ui.start('#firebaseui-auth-container', {
       uiShown: function() {
         // The widget is rendered.
         // Hide the loader.
-        document.getElementById('loader').style.display = 'none';
-      }
+       }
     },
     'credentialHelper': firebaseui.auth.CredentialHelper.NONE,
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
@@ -35,17 +28,13 @@ ui.start('#firebaseui-auth-container', {
       //firebase.auth.GithubAuthProvider.PROVIDER_ID,
       firebase.auth.EmailAuthProvider.PROVIDER_ID//,
       //firebase.auth.PhoneAuthProvider.PROVIDER_ID
-    ],
-    // Terms of service url.
-    tosUrl: '<your-tos-url>',
-    // Privacy policy url.
-    privacyPolicyUrl: '<your-privacy-policy-url>'
+    ]
   };
 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
-      console.log(user.displayName);
+      alert(user.displayName);
       var displayName = user.displayName;
       var email = user.email;
       var emailVerified = user.emailVerified;
@@ -60,4 +49,7 @@ ui.start('#firebaseui-auth-container', {
     }
   });
 
-  //ui.start('#firebaseui-auth-container', uiConfig);
+  var ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+
+  ui.start('#firebaseui-auth-container', uiConfig);
