@@ -15,7 +15,7 @@ ui.start('#firebaseui-auth-container', {
         // Return type determines whether we continue the redirect automatically
         // or whether we leave that to developer to handle.
         alert("true");
-        return true;
+        return false;
       },
       uiShown: function() {
         // The widget is rendered.
@@ -23,6 +23,7 @@ ui.start('#firebaseui-auth-container', {
         document.getElementById('loader').style.display = 'none';
       }
     },
+    'credentialHelper': firebaseui.auth.CredentialHelper.NONE,
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
     signInFlow: 'popup',
     signInSuccessUrl: '<url-to-redirect-to-on-success>',
