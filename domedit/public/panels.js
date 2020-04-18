@@ -11,11 +11,4 @@ jQuery(function($)
         position: '200px'
         })
 
-        var vSplits=$('.vsplitter');
-        for(i = 0; i < vSplits.length; i++)
-        {
-            vSplits[i].position = 'fixed';
-            vSplits[i].left = vSplits[i].left+14;
-        }
 });
-

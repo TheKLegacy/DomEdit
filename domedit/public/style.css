@@ -32,7 +32,6 @@
     position: fixed;
     top: 59px;
     bottom: 0;
-    min-width: 200px;
     left: 0; 
     background-color: #252526;
 }
@@ -134,4 +133,16 @@
 {
     background-color: #131317;
     border-bottom: none;
+}
+
+body 
+{
+  overflow: hidden; /* Hide scrollbars */
+}
+
+#split-me
+{
+    position: fixed;
+    top: 60px;
+    left: 0px;
 }
