@@ -2,9 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -57,64 +54,15 @@
         firebase.analytics();
         </script>
     
-        <link rel="stylesheet" type="text/css" href="style.css">
-        
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    
         <script src="login.js"></script>
-        <link href="css/jquery.splitter.css" rel="stylesheet">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.splitter.js"></script>
-
-        
         
     <title>React App</title>
   </head>
-
   <body>
-
     <div id="firebaseui-auth-container"></div>
-    <div id="root">
-      
-      <div id="Nav"></div>
-      <div id="Toolbar"></div>
-      <div class="split-me-container">
-
-        <div id="split-me">
-
-          <div id="Explorer">
-
-          </div>
-
-          <div id="Viewport">
-            <div id="window_0" class="window"></div>
-              <div class="TabNav">
-                <div onclick="displayTab(0)" id="tab_0_button" class="tab_button activeTab"><span class="tab-label">unnamed</span></div>
-                <div onclick="newTab(0)" class="newTabButton">
-                  <img class="newTabImg" src="assets/plus.png" />
-                </div>
-              </div>
-              <div id="tab_0" class="tab"></div>
-            <div id="window_1" class="window">
-              <div class="TabNav">
-                <div onclick="displayTab(0)" id="tab_0_button" class="tab_button activeTab"><span class="tab-label">unnamed</span></div>
-                <div onclick="newTab(1)" class="newTabButton"><img class="newTabImg" src="assets/plus.png" /></div>
-              </div>
-            </div>
-            <div id="window_2" class="window">
-              <div class="TabNav">
-                <div onclick="newTab(2)" class="newTabButton"><img class="newTabImg" src="assets/plus.png" /></div>
-              </div>
-            </div>
-            <div id="window_3" class="window">
-              <div class="TabNav">
-                <div onclick="newTab(3)" class="newTabButton"><img class="newTabImg" src="assets/plus.png" /></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <script src="panels.js"></script>
+    <div id="root"></div>
   </body>
 </html>

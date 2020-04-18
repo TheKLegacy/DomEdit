@@ -1,0 +1,137 @@
+#firebaseui-auth-container
+{
+    visibility: hidden;
+}
+
+#Nav
+{
+    position: fixed;
+    top: 0;
+    height: 20px;
+    right: 0;
+    left: 0;
+    font-size: 16px;
+    background-color: #252526;
+    border-bottom: 1px solid #131317;
+}
+
+#Toolbar
+{
+    position: fixed;
+    top: 21px;
+    height: 38px;
+    right: 0;
+    left: 0;
+    font-size: 32px;
+    background-color: #252526;
+    border-bottom: 1px solid #131317;
+}
+
+#Explorer
+{
+    position: fixed;
+    top: 59px;
+    bottom: 0;
+    min-width: 200px;
+    left: 0; 
+    background-color: #252526;
+}
+
+#Viewport
+{
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #131317;
+}
+
+#window_0
+{   position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.window .TabNav
+{
+    background-color: #0a0a0a;
+}
+
+.window
+{
+    display: none;
+}
+
+.newTabButton
+{
+    display: inline-block;
+    padding: 0;
+    padding-top: 6px;
+    margin: 0;
+    line-height: 26px;
+    height: 26px;
+    width: 32px;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.newTabImg
+{
+    width: 20px;
+    height: 20px;
+    filter: invert(60%); 
+    -webkit-filter:invert(60%); 
+    display: inline-block;
+    margin: auto;
+}
+
+.TabNav
+{
+    height: 32px;
+    line-height: 32px;
+    margin: auto;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.tab_button
+{
+    color: white;
+    display: table-cell;
+    padding: 0px 12px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.tab-label
+{
+    height:32px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab_button:hover, .newTabButton:hover
+{
+    background-color: #1c1c1c;
+}
+
+.tab_button, .newTabButton
+{
+    border-right: 2px solid #1c1c1c;
+    border-bottom: 2px solid #1c1c1c;
+    background-color: #252526;
+    transition: width 2s
+}
+
+.activeTab 
+{
+    background-color: #131317;
+    border-bottom: none;
+}

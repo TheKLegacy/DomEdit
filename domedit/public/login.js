@@ -1,7 +1,3 @@
-console.log("test");
-
-
-
   var uiConfig = {
     callbacks: {
       signInSuccessWithAuthResult: function(authResult, redirectUrl) {
